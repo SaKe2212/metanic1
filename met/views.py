@@ -38,7 +38,7 @@ def get_queryset(self):
 
 def product_list(request):
     products = Product.objects.all()
-    return render(request, '/templates/catalog/product_list.html', {'products': products})
+    return render(request, 'catalog/product_list.html', {'products': products})
 
 
 
